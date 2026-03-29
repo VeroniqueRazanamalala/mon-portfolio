@@ -1,0 +1,118 @@
+/* Configuration générale */
+.app-container {
+  background-color: #111111;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif; /* Une police moderne */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.logo-box {
+  border: 2px solid white;
+  padding: 5px 15px;
+  text-align: center;
+  line-height: 1;
+}
+
+.logo-top { font-size: 20px; font-weight: 300; }
+.logo-bottom { font-size: 10px; font-weight: bold; letter-spacing: 2px; }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.nav-links li { cursor: pointer; transition: 0.3s; }
+.nav-links li:hover { color: #00df9a; }
+.active-link { color: #00df9a; border-bottom: 2px solid #00df9a; padding-bottom: 5px; }
+
+/* Section Hero */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  position: relative;
+}
+
+.hero-intro { color: #888; font-size: 20px; margin-bottom: 10px; }
+
+.hero-title {
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 0.9;
+  z-index: 2;
+}
+
+.accent-color { color: #00df9a; }
+
+/* Image de fond */
+.hero-image-wrapper {
+  position: absolute;
+  right: -5%;
+  top: 0;
+  width: 55%;
+  height: 100%;
+  transform: rotate(-7deg) scale(1.1);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  filter: grayscale(30%) brightness(80%);
+}
+/* --- Style du sous-titre métier --- */
+.hero-subtitle {
+  font-size: 28px;
+  color: #ffffff;
+  margin: 20px 0 35px 0;
+  font-weight: 300;
+}
+
+.hero-subtitle .accent {
+  color: #00df9a;
+  margin: 0 10px;
+}
+
+/* --- Style du bouton vert --- */
+.btn-about {
+  background-color: #00df9a;
+  color: #111111;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  position: relative;
+}
+
+.btn-about:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
