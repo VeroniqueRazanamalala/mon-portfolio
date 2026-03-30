@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'; 
 import heroImg from './assets/images/photo1.png'; 
+import About from './components/about';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <nav className="navbar">
         <div className="logo-box">
           <div className="logo-top">V</div>
-          <div className="logo-bottom">IOLA</div>
+          <div className="logo-bottom">WINNE</div>
         </div>
         <ul className="nav-links">
           <li className="active-link">accueil</li>
@@ -23,11 +24,11 @@ function App() {
         <div className="hero-content">
           <p className="hero-intro">Bonjour,</p>
           <h1 className="hero-title">
-            Je suis <span className="accent-color">Viola</span>
+            Je suis <span className="accent-color">Veronique</span>
           </h1>
           
           <p className="hero-subtitle">
-            Développeuse web <span className="accent">|</span> Web designer
+            Développeuse Full Stack <span className="accent">|</span> Designer UI/UX
           </p>
 
           <button className="btn-about">à propos de moi</button>
@@ -37,6 +38,7 @@ function App() {
           <img src={heroImg} alt="Mon Espace de Travail" className="hero-image" />
         </div>
       </main>
+       <About/>
     </div>
   );
 }

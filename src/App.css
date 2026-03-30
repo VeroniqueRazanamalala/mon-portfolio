@@ -3,7 +3,7 @@
   background-color: #111111;
   color: white;
   min-height: 100vh;
-  font-family: 'Inter', sans-serif; /* Une police moderne */
+  font-family: 'Inter', sans-serif; 
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -65,7 +65,7 @@
 
 .accent-color { color: #00df9a; }
 
-/* Image de fond */
+/* ma photo style */
 .hero-image-wrapper {
   position: absolute;
   right: -5%;
@@ -84,7 +84,7 @@
   opacity: 0.4;
   filter: grayscale(30%) brightness(80%);
 }
-/* --- Style du sous-titre métier --- */
+/* --- Style du sous-titre S --- */
 .hero-subtitle {
   font-size: 28px;
   color: #ffffff;
@@ -97,7 +97,7 @@
   margin: 0 10px;
 }
 
-/* --- Style du bouton vert --- */
+/* --- Style du bouton apropos */
 .btn-about {
   background-color: #00df9a;
   color: #111111;

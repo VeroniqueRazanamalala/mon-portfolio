@@ -1,0 +1,198 @@
+.about-section {
+  background-color: #000000;
+  color: #a0a0a0; 
+  padding: 100px 10%;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+/* --- TEXTE ET GRANDS ENGRENAGES --- */
+.about-text-content {
+  flex: 1.4;
+  position: relative;
+  z-index: 1;
+}
+
+.gears-decoration {
+  position: absolute;
+  top: -80px;
+  left: -100px;
+  z-index: -1;
+  opacity: 0.3; 
+}
+
+.big-gear {
+  width: 250px; /* Encore plus grand pour un effet puissant */
+  position: absolute;
+  filter: drop-shadow(0 0 20px rgba(0, 223, 154, 0.4));
+}
+
+.g1 { top: 0; left: 0; animation: rotate 15s linear infinite; }
+.g2 { top: 180px; left: 200px; width: 180px; animation: rotateRev 20s linear infinite; }
+
+.about-title { font-size: 72px; color: white; font-weight: 800; margin-bottom: 30px; }
+.accent-color { color: #00df9a; }
+.about-description, .about-tools { font-size: 19px; line-height: 1.8; margin-bottom: 25px; }
+.white-text { color: white; font-weight: 600; }
+
+/* --- STYLE DU BOUTON CONTACT --- */
+.btn-contact {
+  background-color: #00df9a;
+  color: black;
+  border: none;
+  padding: 18px 40px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: lowercase; /* Comme sur ton modèle */
+  cursor: pointer;
+  border-radius: 8px; /* Coins arrondis élégants */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 223, 154, 0.2);
+}
+
+.btn-contact:hover {
+  background-color: #00bf83;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 223, 154, 0.5); /* Effet de lueur intense */
+}
+
+/* --- PHOTO AVEC CADRE PROFESSIONNEL --- */
+.about-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.photo-frame-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.photo-frame-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2.5px solid #00df9a;
+  top: 25px;
+  left: 25px;
+  border-radius: 15px;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.profile-img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 15px;
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  filter: drop-shadow(0 10px 30px rgba(0, 223, 154, 0.2));
+}
+
+/* --- SERVICES --- */
+.services-container {
+  display: flex;
+  gap: 80px;
+  border-top: 1px solid #333;
+  padding-top: 60px;
+}
+
+.services-grid { display: flex; gap: 100px; }
+.service-item h3 { color: white; font-size: 28px; }
+.icon-accent { color: #00df9a; }
+.service-item li { color: #00df9a; list-style: none; margin-bottom: 10px; font-size: 19px; }
+
+/* --- SECTION MY SKILLS --- */
+.services-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+}
+
+.my-skills-wrapper {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.skills-title {
+  color: #00df9a;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.skills-icons-grid {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-box span {
+  font-size: 12px;
+  color: #a0a0a0;
+  text-transform: lowercase;
+}
+
+/* Style des icônes (Carré plein pour JS, bordures pour les autres) */
+.icon-js, .icon-react, .icon-figma, .icon-wp {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 24px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.icon-js {
+  background-color: #00df9a;
+  color: black;
+}
+
+.icon-react, .icon-figma, .icon-wp {
+  border: 2px solid #00df9a;
+  color: #00df9a;
+}
+
+.skill-box:hover .icon-js, 
+.skill-box:hover .icon-react, 
+.skill-box:hover .icon-figma, 
+.skill-box:hover .icon-wp {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 223, 154, 0.5);
+}
+
+
+/* ANIMATIONS */
+@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes rotateRev { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+
+@media (max-width: 1024px) {
+  .about-container { flex-direction: column; text-align: center; }
+  .gears-decoration { left: 50%; transform: translateX(-50%); }
+  .photo-frame-wrapper::before { display: none; }
+}
