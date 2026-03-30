@@ -31,7 +31,7 @@
 }
 
 .big-gear {
-  width: 250px; /* Encore plus grand pour un effet puissant */
+  width: 250px; 
   position: absolute;
   filter: drop-shadow(0 0 20px rgba(0, 223, 154, 0.4));
 }
@@ -52,9 +52,9 @@
   padding: 18px 40px;
   font-weight: bold;
   font-size: 16px;
-  text-transform: lowercase; /* Comme sur ton modèle */
+  text-transform: lowercase; 
   cursor: pointer;
-  border-radius: 8px; /* Coins arrondis élégants */
+  border-radius: 8px; 
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 223, 154, 0.2);
 }
@@ -62,10 +62,10 @@
 .btn-contact:hover {
   background-color: #00bf83;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 223, 154, 0.5); /* Effet de lueur intense */
+  box-shadow: 0 8px 25px rgba(0, 223, 154, 0.5); 
 }
 
-/* --- PHOTO AVEC CADRE PROFESSIONNEL --- */
+
 .about-visual {
   flex: 1;
   display: flex;
@@ -115,7 +115,7 @@
 .icon-accent { color: #00df9a; }
 .service-item li { color: #00df9a; list-style: none; margin-bottom: 10px; font-size: 19px; }
 
-/* --- SECTION MY SKILLS --- */
+/* --- SECTION SKILLS --- */
 .services-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -155,7 +155,7 @@
   text-transform: lowercase;
 }
 
-/* Style des icônes (Carré plein pour JS, bordures pour les autres) */
+
 .icon-js, .icon-react, .icon-figma, .icon-wp {
   width: 60px;
   height: 60px;
