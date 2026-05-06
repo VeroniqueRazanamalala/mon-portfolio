@@ -27,7 +27,7 @@ function App() {
         <div className="hero-content">
           <p className="hero-intro">Bonjour,</p>
           <h1 className="hero-title">
-            Je suis <span className="accent-color">Veronique</span>
+            Je m'appelle <span className="accent-color">Veronique</span>
           </h1>
 
           <p className="hero-subtitle">
